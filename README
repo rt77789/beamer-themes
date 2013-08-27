@@ -1,4 +1,4 @@
-Latex beamer themes for presentations
+##Latex beamer themes of lab502@ustc for presentations
 
-Usage:
-    - Put the style file in your path and add appropriate logos
+Forked and modified from makokal/beamer-themes.
+Feel free to use and modify it.
