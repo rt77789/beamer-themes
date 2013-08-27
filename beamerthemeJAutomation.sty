@@ -1,4 +1,5 @@
-\ProvidesPackage{beamerthemeJAutomation}[2011/09/20]
+% Modified from git@github.com:makokal/beamer-themes.git
+\ProvidesPackage{beamerthemeJAutomation}[2013/08/27]
 
 \definecolor{JOrange}{RGB}{249,142,42}
 \definecolor{JBlue}{RGB}{0,67,115}
@@ -8,8 +9,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \useoutertheme[width=.15\paperwidth]{sidebar}
 \setlength{\beamer@headheight}{.165\paperheight}
-\pgfdeclareimage[width=.13\paperwidth]{small-logo}{automation_logo}
-\pgfdeclareimage[width=.23\paperwidth]{main-logo}{jjlogo}
+%% Add logos of USTC.
+\pgfdeclareimage[width=.13\paperwidth]{small-logo}{ustc_logo.jpg}
+\pgfdeclareimage[width=.23\paperwidth]{big-logo}{ustc_logo.jpg}
+\pgfdeclareimage[width=.98\paperwidth]{main-logo}{ustc_logo2.jpg}
 \pgfdeclareimage[width=.33\paperwidth]{large-corner}{large-corner}
 \pgfdeclareimage[height=\beamer@headheight]{small-corner}{small-corner}
 \setbeamertemplate{sidebar left}{%
@@ -66,7 +69,9 @@
 \DoPurpleBackground
 
 % Logo
-\pgftext[at=\pgfpoint{.009\paperwidth}{-.99\paperheight},left,base]{\pgfuseimage{main-logo}}
+%\pgftext[at=\pgfpoint{.009\paperwidth}{-.99\paperheight},left,base]{\pgfuseimage{main-logo}}
+\pgftext[at=\pgfpoint{.009\paperwidth}{-.12\paperheight},left,base]{\pgfuseimage{main-logo}}
+\pgftext[at=\pgfpoint{.009\paperwidth}{-.99\paperheight},left,base]{\pgfuseimage{big-logo}}
 
 \end{pgfpicture}%
 }
